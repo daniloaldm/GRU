@@ -29,7 +29,7 @@ test_y = {}
 
 for file in tqdm_notebook(os.listdir(data_dir)): 
     # Ignorando os arquivos que não estamos usando
-    if file[-4:] != ".csv" or file == "pjm_hourly_est.csv":
+    if file[-4:] != ".csv" or file == "pjm_hourly_est.csv" or file == "completo_AEP_hourly.csv":
         continue
     
     # Armazene o arquivo csv em um Pandas DataFrame
